@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/fruitscss.css">
+    <link rel="stylesheet" href="css/strow.css">
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet" href="css/style-starter.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Classification</title>
+</head>
+<body>
+    <section class="w3l-bootstrap-header">
+        <nav class="navbar navbar-expand-lg navbar-light py-lg-2 py-2">
+          <div class="container">
+            <a class="navbar-brand" href="index.html"><span class="">Farm</span>  Planning</a>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon fa fa-bars"></span>
+            </button>
+      
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto mt-2">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                 <li class="nav-item">
+                  <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="fruit_classification.html">FruitsIdentification</a>
+                </li>
+               
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+              </ul>
+              <form action="#" class="form-inline position-relative my-2 my-lg-0">
+                <input class="form-control search" type="search" placeholder="Search here..." aria-label="Search" required="">
+                <button class="btn btn-search position-absolute" type="submit"><span class="fa fa-search" aria-hidden="true"></span></button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </section>
+    
+    <div id="container">
+        <img id="strawberry" src="images\FruitsBlack.jpg">
+        <h1>Fruit Identification</h1>
+
+       
+        <div id="imagePreview"></div>
+
+        
+        <label for="imageInput">Select an image of a fruit:</label>
+        <input type="file" id="imageInput" accept="image/*" onchange="previewImage()">
+
+        
+        <button onclick="classifyFruit()">Classify</button>
+
+        
+        <div id="result"></div>
+    </div>
+    
+
+
+    <script>
+        
+        function previewImage() {
+            const inputElement = document.getElementById('imageInput');
+            const file = inputElement.files[0];
+
+            if (file) {
+                const reader = new FileReader();
+
+                reader.onload = function (e) {
+                    const imagePreview = document.getElementById('imagePreview');
+                    imagePreview.innerHTML = `<img src="${e.target.result}" alt="Selected Image" style="max-width: 100%; max-height: 300px;">`;
+                };
+
+                reader.readAsDataURL(file);
+            }
+        }
+
+       
+        function classifyFruit() {
+            const inputElement = document.getElementById('imageInput');
+            const file = inputElement.files[0];
+
+            if (!file) {
+                alert('Please select an image first.');
+                return;
+            }
+
+            const apiKey = 'd9c321900d1e429e82fb77921f3a8455';
+            const endpoint = 'https://centralindia.api.cognitive.microsoft.com/';
+            const projectId = '2d02edd6-9182-4a38-99ce-345d28d0f5b8';
+
+            const apiUrl = `https://fruitsdetect101-prediction.cognitiveservices.azure.com/customvision/v3.0/Prediction/2d02edd6-9182-4a38-99ce-345d28d0f5b8/classify/iterations/Iteration1/image`;
+
+            const formData = new FormData();
+            formData.append('image', file);
+
+            fetch(apiUrl, {
+                method: 'POST',
+                headers: {
+                    'Prediction-Key': apiKey
+                },
+                body: formData
+            })
+            .then(response => response.json())
+            .then(result => {
+              
+                displayResult(result);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+
+        function displayResult(result) {
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = '';
+
+            if (result.predictions && result.predictions.length > 0) {
+                const topPrediction = result.predictions[0];
+                resultDiv.innerHTML = `<p>Quality_of_Fruit: ${topPrediction.tagName}</p>
+                                       `;
+            } else {
+                resultDiv.innerHTML = '<p>No predictions found.</p>';
+            }
+        }
+    </script>
+</body>
+</html>
