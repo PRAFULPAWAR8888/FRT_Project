@@ -1,0 +1,27 @@
+
+#container {
+    background-color: lavender; 
+    padding: 20px; 
+    border-radius: 10px;
+    margin: 20px;
+}
+
+
+h1 {
+    color: lightcoral;
+}
+
+
+label[for="imageInput"] {
+    color: yellow;
+}
+
+
+input[type="file"] {
+    color: rgb(200, 192, 200);
+}
+
+
+#result {
+    color: #3498db; 
+}
