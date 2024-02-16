@@ -8,7 +8,7 @@ https://youtu.be/-U9xH_2CPag?si=g-SS1qs6EyATFmFi
 ## Azure Portal All Services
 ![Screenshot (247)](https://github.com/PRAFULPAWAR8888/FRT_Project/assets/114899493/b348703c-8ad8-41f9-bc2a-409082bf7ce5)
 
-## Aure Storage ( we  deploy all my project folder on storage acount)
+## Azure Storage ( we  deploy all my project folder on storage acount)
 ![Screenshot (249)](https://github.com/PRAFULPAWAR8888/FRT_Project/assets/114899493/35ddeacb-2e1b-49e1-b816-a543edde449e)
 
 ## Azure Ai Coustom Vision Services(Train model for frut quality detection)
