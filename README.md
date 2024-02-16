@@ -6,10 +6,10 @@ https://youtu.be/-U9xH_2CPag?si=g-SS1qs6EyATFmFi
 
 # ScreenShots
 ## Azure Portal All Services
-![Screenshot (248)](https://github.com/PRAFULPAWAR8888/FRT_Project/assets/114899493/27ee2ce9-c880-4384-a8ed-7e9863a32e3e)
+![Screenshot (247)](https://github.com/PRAFULPAWAR8888/FRT_Project/assets/114899493/b348703c-8ad8-41f9-bc2a-409082bf7ce5)
 
 ## Aure Storage ( we  deploy all my project folder on storage acount)
-![Screenshot (250)](https://github.com/PRAFULPAWAR8888/FRT_Project/assets/114899493/dcae7415-e4b7-498d-834e-02921b65de35)
+![Screenshot (249)](https://github.com/PRAFULPAWAR8888/FRT_Project/assets/114899493/35ddeacb-2e1b-49e1-b816-a543edde449e)
 
 ## Azure Ai Coustom Vision Services(Train model for frut quality detection)
 ![Screenshot (252)](https://github.com/PRAFULPAWAR8888/FRT_Project/assets/114899493/27be484c-6750-4f85-aadb-09084632ce5f)
