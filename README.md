@@ -1,4 +1,4 @@
-# Azure Service (CDN) Endpoint link
+# Azure Service (CDN) Endpoint link(Project Link)
 https://farmplaningsite.azureedge.net
 
 # Project Demo Video link
