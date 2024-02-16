@@ -27,6 +27,18 @@ https://youtu.be/-U9xH_2CPag?si=g-SS1qs6EyATFmFi
 
 ![Screenshot (254)](https://github.com/PRAFULPAWAR8888/FRT_Project/assets/114899493/e7ab8606-1368-4cd0-8192-f8869887fe3c)
 
+![Screenshot (255)](https://github.com/PRAFULPAWAR8888/FRT_Project/assets/114899493/eaaa55bb-fb73-47c7-88d0-7cddbcc12521)
+
+# TECH STACK:
+## HTML
+## CSS
+##  JavaScript
+## Costom Vision
+## Content Delivery Network
+## Storage Acount
+
+# Team
+## Praful Pawar - pawarpraful950@gmail.com
 
 
 
