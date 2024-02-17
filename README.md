@@ -23,17 +23,20 @@ https://youtu.be/-U9xH_2CPag?si=g-SS1qs6EyATFmFi
 ## This is my project homepage
 ![Screenshot (246)](https://github.com/PRAFULPAWAR8888/FRT_Project/assets/114899493/20512684-1126-4f5f-a2ac-c2503badf286)
 
+## This is about us page
 ![Screenshot (253)](https://github.com/PRAFULPAWAR8888/FRT_Project/assets/114899493/33477eea-3439-4ac5-8a78-9f8b111528f5)
 
+## This is Services page
 ![Screenshot (254)](https://github.com/PRAFULPAWAR8888/FRT_Project/assets/114899493/e7ab8606-1368-4cd0-8192-f8869887fe3c)
 
+## This is coustom vision service page(FruitsIdentification) 
 ![Screenshot (255)](https://github.com/PRAFULPAWAR8888/FRT_Project/assets/114899493/eaaa55bb-fb73-47c7-88d0-7cddbcc12521)
 
 # TECH STACK:
 ## HTML
 ## CSS
 ##  JavaScript
-## Costom Vision
+## Custom Vision
 ## Content Delivery Network
 ## Storage Acount
 
